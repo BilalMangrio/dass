@@ -7,9 +7,6 @@ gb=pickle.load(open('gb.pickle','rb'))
 
 app=Flask(__name__)
 
-@app.route('/')
-def home():
-    return 'API For Depression, Stress and Anxiety'
 
 @app.route('/depression', methods=['POST'])
 def depression_api_method():
